@@ -10,6 +10,7 @@
 function setup() {
   createCanvas(500, 500);
   noStroke();
+  colorMode(HSL);
 }
 
 function draw() {
@@ -22,9 +23,9 @@ function draw() {
     x.push(0)
     y.push(0)
 //    filler.push(random(256)); 
-    fill_r.push(random(256))
-    fill_g.push(random(256))
-    fill_b.push(random(256))
+    fill_r.push(random(360))
+    fill_g.push(random(40,100))
+    fill_b.push(random(40, 90))
   }
 //  console.log({seedX, seedY, x, y })
   if (seedX.length){
